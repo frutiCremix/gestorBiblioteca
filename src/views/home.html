@@ -5,8 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css" type="text/css">
 </head>
 <body>
-    <h1>home page estas logueado</h1>
+    <div class="menu">
+        <h2>menu</h2>
+        <ul>
+            <li>
+                <button class="btn-menu">ver Todos</button>
+                <button class="btn-menu">agregar Libro</button>
+                <button class="btn-menu">eliminar Libro</button>
+                <button class="btn-menu">modificar Libro</button>
+            </li>
+        </ul>
+    </div>
+    <div class="main"><h2>Invetario de todos los libros</h2></div>
+    <div class="add">
+        <h2>agregar libros</h2>
+
+        <form id='formAdd'>
+            <label for="titulo">Agregar titulo: </label>
+            <input type="text" name="titulo" id="titulo">
+            <label for="autor">Nombre completo del autor: </label>
+            <input type="text" name="autor" id="autor">
+            <label for="precio">Precio: </label>
+            <input type="number" name="precio" id="precio">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <div class="remove">
+        <h2>elimnar libros</h2>
+        <form id='formDelete'>
+            <label for="idDelete">Id del libro a borrar: </label>
+            <input type="number" name="idDelete" id="idDelete">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <div class="modify">
+        <h2>modificar libros</h2>
+        <form id='formPatch'>
+            <h1 for="">ingrese ID y al menos 1 campo a modificar</h1>
+            <label for="idPatch">Id del libro a modificar: </label>
+            <input type="number" name="idPatch" id="idPatch">
+            <label for="tituloPatch">Titulo del libro a modificar: </label>
+            <input type="text" name="tituloPatch" id="tituloPatch">
+            <label for="autorPatch">Autor del libro a modificar: </label>
+            <input type="text" name="autorPatch" id="autorPatch">
+            <label for="precioPatch">Precio del libro a modificar: </label>
+            <input type="number" name="precioPatch" id="precioPatch">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+    <script src="./scripts/gelAll.js"></script>
+    <script src="./scripts/btnMenu.js"></script>
+    <script src="./scripts/form.js"></script>
 </body>
 </html>

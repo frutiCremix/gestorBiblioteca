@@ -7,8 +7,8 @@ const controllerCREATE={
         crearLibro.create(params,(error,results,fields)=>{
             if(error)throw error;
           
-            console.log(`libro creado con exito`);
-            res.redirect('/api');
+            
+            res.send({exito:true,accion:'create'});
             
         });
     },

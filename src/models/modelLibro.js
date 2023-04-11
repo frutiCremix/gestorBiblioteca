@@ -35,6 +35,7 @@ const modificarLibro={
           }
         consulta=consulta.slice(0,-2);//eliminamos la ultima coma y espacio vacio del string
         consulta+=`WHERE id=${id}`;
+        
         conexion.query(consulta,callback);    
     }
 }

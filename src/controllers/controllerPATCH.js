@@ -8,7 +8,10 @@ const controllerPATCH={
         modificarLibro.patch(id,params,(error,results)=>{
             if(error)throw error;
             console.log(`valores ${params} modificados con exito`);
-            res.redirect('/api');
+            res.send({
+                exito:true,
+                accion:'patch'
+            });
         });
     }
 };

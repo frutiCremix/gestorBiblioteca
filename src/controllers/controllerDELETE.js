@@ -7,7 +7,10 @@ const controllerDELETE={
             if(error)throw error;
           
             console.log(`libro con id: ${id} eliminado con exito`);
-            res.redirect('/api');
+            res.send({
+                exito:true,
+                accion:'delete'
+            });
             
         })
     }

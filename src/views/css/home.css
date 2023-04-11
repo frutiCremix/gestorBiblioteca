@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    background-color: rgb(66, 117, 212);
+    width: 20%;
+    height: 100vh;
+}
+.menu button{
+    background:none;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menu button:hover{
+    background-color: rgb(18, 106, 221);
+}
+.main{
+    background-color: rgb(223, 217, 211);
+    width: 80%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+table{
+    border: 1px solid black;
+    text-align: center;
+}
+th{
+    padding: 5px;
+    color:white;
+    background-color: rgb(94, 133, 216);
+}
+
+td{
+    border: 1px solid black;
+    height: 48px;
+}
+td:first-child{
+    border:none;
+    background-color:rgb(94, 133, 216);
+    color: white;
+    text-align: center;
+}
+.add, .remove ,.modify{
+    background-color: rgb(223, 217, 211);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;   
+    gap: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94, 133, 216);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    gap: 5px;
+    width: 50%;
+}
+form button{
+    border: none;
+    background-color: rgb(101, 199, 101);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
