@@ -26,7 +26,7 @@ arrBtn.forEach(elem=>{
             case 'eliminar Libro':{
                 main.style.display='none';
                 add.style.display='none';
-                remove.style.display='block';
+                remove.style.display='flex';
                 modify.style.display='none';
            
                 break;
@@ -35,7 +35,7 @@ arrBtn.forEach(elem=>{
                 main.style.display='none';
                 add.style.display='none';
                 remove.style.display='none';
-                modify.style.display='block';
+                modify.style.display='flex';
            
                 break;
             }

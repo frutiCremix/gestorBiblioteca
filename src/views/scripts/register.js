@@ -8,6 +8,25 @@ eventoForm.addEventListener('submit', (e) => {
   const inputUserName = document.getElementById('inputUserNameRegister');
   const inputPassword = document.getElementById('inputPasswordRegister');
 
+//validacion de email
+const emailRegex = /^[a-zA-Z0-9._%+-]+@(hotmail|outlook|gmail)\.(com)$/;
+
+if(inputUserName.value.length<3){
+  alert('tu userName debe poseer mas de 3 caracteres');
+  return;
+}
+if (!emailRegex.test(inputEmail.value)) {
+  alert('Por favor ingrese un correo electrónico de Hotmail válido');
+  return;
+}
+//validacion de contraseña
+const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+if (!passwordRegex.test(inputPassword.value)) {
+  alert('Por favor ingrese una contraseña válida con , al menos, 1 mayuscula, 1 minuscula, 1 numero y longitud de 8 caracteres como minimo');
+  return;
+}
+
   const body = {
     name: inputName.value,
     email: inputEmail.value,

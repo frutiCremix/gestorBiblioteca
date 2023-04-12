@@ -70,9 +70,9 @@ fetch(URL,{method: 'PATCH'})
 function confirmar(data){
     if(data.exito){
         switch(data.accion){
-            case 'create':{console.log('libro creado con exito');break;}
-            case 'delete':{console.log('libro borrado con exito');break;}
-            case 'patch':{console.log('libro modificado con exito');break;}
+            case 'create':{alert('libro creado con exito');break;}
+            case 'delete':{alert('libro borrado con exito');break;}
+            case 'patch':{alert('libro modificado con exito');break;}
         }
     }
 }

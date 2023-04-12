@@ -8,6 +8,11 @@ EventoForm.addEventListener('submit',(e)=>{
     const inputName=document.getElementById('inputName');
     const inputPassword=document.getElementById('inputPassword');
 
+    if (!inputName.value || !inputPassword.value) {
+      alert('Por favor ingrese un nombre de usuario y una contraseña');
+      return;
+    }
+
     const body = {
         name: inputName.value,
         password: inputPassword.value
